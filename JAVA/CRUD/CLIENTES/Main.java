@@ -8,7 +8,7 @@ public class Main {
         ClienteRepository repository = new ClienteRepository();
         Cliente um = new Cliente("Rafael", "123456", "teste", 01);
         repository.adicionar(um);
-        System.out.println(repository.listarTodos());
+        System.out.println(repository.listar());
         System.out.println(repository.buscar("123456"));
     }
 }
