@@ -4,9 +4,9 @@ public class Cliente{
     private String nome;
     private final String cpf;
     private String email;
-    private int data;
+    private String data;
 
-    public Cliente(String nome, String cpf, String email, int data) {
+    public Cliente(String nome, String cpf, String email, String data) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -25,7 +25,6 @@ public class Cliente{
         return this.cpf;
     }
 
-
     public String getEmail() {
         return this.email;
     }
@@ -34,11 +33,11 @@ public class Cliente{
         this.email = email;
     }
 
-    public int getData() {
+    public String getData() {
         return this.data;
     }
 
-    public void setData(int data) {
+    public void setData(String data) {
         this.data = data;
     }
 
