@@ -1,6 +1,7 @@
 package JAVA.CRUD.CLIENTES.repository;
 
-import JAVA.CRUD.CLIENTES.model.*;
+import JAVA.CRUD.CLIENTES.model.Cliente;
+
 import java.util.*;
 
 public class ClienteRepository{
@@ -10,20 +11,20 @@ public class ClienteRepository{
         clientes.put(cliente.getCpf(), cliente);
     }
 
-    public Collection<Cliente> listar(){
-        return clientes.values();
-    }
-
     public Cliente buscar(String cpf){
         return clientes.get(cpf);
     }
 
-    public boolean existe(String cpf){
-        return clientes.containsKey(cpf);
+    public Collection<Cliente> listar(){
+        return clientes.values();
     }
 
     public void remover(String cpf){
         clientes.remove(cpf);
+    }
+
+    public boolean existe(String cpf){
+        return clientes.containsKey(cpf);
     }
 
 }
