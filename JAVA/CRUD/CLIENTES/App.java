@@ -2,7 +2,7 @@ package JAVA.CRUD.CLIENTES;
 import JAVA.CRUD.CLIENTES.model.Cliente;
 import JAVA.CRUD.CLIENTES.repository.ClienteRepository;
 
-public class Main {
+public class App {
 
     public static void main(String[] args) {
         ClienteRepository repository = new ClienteRepository();
