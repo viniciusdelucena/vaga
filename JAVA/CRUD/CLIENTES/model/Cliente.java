@@ -2,10 +2,9 @@ package JAVA.CRUD.CLIENTES.model;
 
 public class Cliente{
     private String nome;
-    private String cpf;
+    private final String cpf;
     private String email;
     private int data;
-
 
     public Cliente(String nome, String cpf, String email, int data) {
         this.nome = nome;
@@ -15,7 +14,7 @@ public class Cliente{
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -23,15 +22,12 @@ public class Cliente{
     }
 
     public String getCpf() {
-        return cpf;
+        return this.cpf;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
@@ -39,14 +35,13 @@ public class Cliente{
     }
 
     public int getData() {
-        return data;
+        return this.data;
     }
 
     public void setData(int data) {
         this.data = data;
     }
 
-    @Override
     public String toString() {
         return "{" +
             " nome='" + getNome() + "'" +
@@ -55,4 +50,5 @@ public class Cliente{
             ", data='" + getData() + "'" +
             "}";
     }
+
 }

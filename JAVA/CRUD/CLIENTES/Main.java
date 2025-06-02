@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         ClienteRepository repository = new ClienteRepository();
         Cliente um = new Cliente("Rafael", "123456", "teste", 01);
-        repository.adicionarCliente(um);
-        repository.listarClientes();
+        repository.adicionar(um);
+        System.out.println(repository.listarTodos());
+        System.out.println(repository.buscar("123456"));
     }
 }
